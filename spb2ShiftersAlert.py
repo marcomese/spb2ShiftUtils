@@ -7,10 +7,6 @@ from influxdb.exceptions import InfluxDBClientError
 from spb2Devices import emons, pdms, BELL, FAIL, UNDERLINE
 import argparse as ap
 
-timeInterval = 5
-emonsThr = 150
-pdmsThr = 30
-
 alertStyle = [BELL,FAIL,UNDERLINE]
     
 
