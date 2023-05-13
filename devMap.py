@@ -12,24 +12,37 @@ devMap = {
                                   'PDM2' : 5,
                                   'PDM3' : 7},
                     'metric'     : 'temperature', 
-                    'type'     : float},
+                    'type'     : float,
+                    'selector' : 'last'},
         'status' : {'db'       : 'SSPC',
                     'instance' : {'PDM1' : 7,
                                   'PDM2' : 15,
                                   'PDM3' : 6},
                     'metric'     : 'power', 
-                    'type'     : int}
+                    'type'     : int,
+                    'selector' : 'last'}
     },
     'EMON' : {
         'meas'   : {'db'       : 'EMON',
-                    'instance' : {'EMON5' : '5',
-                                  'EMON6' : '6'},
+                    'instance' : {'EMON5' : 5,
+                                  'EMON6' : 6},
                     'metric'   : 'phd_power',
-                    'type'     : float},
+                    'type'     : float,
+                    'selector' : 'last'},
         'status' : {'db'       : 'SSPC',
                     'instance' : {'EMON5' : 8,
                                   'EMON6' : 0},
                     'metric'   : 'power', 
-                    'type'     : int}
+                    'type'     : int,
+                    'selector' : 'last'}
+    },
+    'ZYNQ' : {
+        'meas'   : {'db'       : 'Zynq-Board',
+                    'instance' : {'ZYNQ1' : 1,
+                                  'ZYNQ2' : 2,
+                                  'ZYNQ3' : 3},
+                    'metric'   : 'temperature',
+                    'type'     : float,
+                    'selector' : 'mean'}
     }
 }
