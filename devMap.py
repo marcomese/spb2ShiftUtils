@@ -43,6 +43,6 @@ devMap = {
                                   'ZYNQ3' : 3},
                     'metric'   : 'temperature',
                     'type'     : float,
-                    'selector' : 'mean'}
+                    'selector' : 'last'}
     }
 }
